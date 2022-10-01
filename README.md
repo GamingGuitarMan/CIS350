@@ -33,6 +33,7 @@ In our app, there are blah blah blah
 
 ![Use Case Diagram](UseCaseDiagram.pdf)
 ___
+<img src="UseCaseDiagram.pdf" alt="Use Case Diagram" width="200"/>
 
 # 4. User Interface  
   
