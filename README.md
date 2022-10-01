@@ -31,7 +31,7 @@ In our app, there are blah blah blah
 ## 3.4 Use Case Diagram  
 
 
-![Use Case Diagram]("C:\Users\atyal\OneDrive - Grand Valley State University\CIS\CIS 350\Project\CIS350\UseCaseDiagram.pdf")
+![Use Case Diagram](UseCaseDiagram.pdf)
 ___
 
 # 4. User Interface  
