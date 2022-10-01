@@ -34,6 +34,8 @@ In our app, there are blah blah blah
 ![Use Case Diagram](UseCaseDiagram.pdf)
 ___
 <img src="UseCaseDiagram.pdf" alt="Use Case Diagram" width="200"/>
+___
+![Use Case Diagram](https://github.com/GamingGuitarMan/CIS350/blob/main/UseCaseDiagram.pdf "Use Case Diagram")
 
 # 4. User Interface  
   
