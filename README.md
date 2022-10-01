@@ -29,6 +29,9 @@ In our app, there are blah blah blah
 ## 3.3 Sequence Diagram  
   
 ## 3.4 Use Case Diagram  
---- 
+
+![image info]("C:\Users\atyal\OneDrive - Grand Valley State University\CIS\CIS 350\Project\UseCaseDiagram.pdf")
+___
+
 # 4. User Interface  
   
