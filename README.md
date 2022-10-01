@@ -1,21 +1,21 @@
 # CIS 350 - Intro to Software Engineering  
-
+---
 ## Stock it - A reminder app so you never run out of food again  
 ## Made by:  
 ### Alex Young | insert title | G01702562  
 ### Nathan Jorgensen | Back-End | g#  
 ### Mohamed Abdirahman | Front-End | g#  
-
+---
 # 1. Abstract  
 One issue all of us in the team, and many others face, is getting distracted as our lives get ever more complex and busy. When commuting, or in passing time, people generally worry about what to do next, and what is coming up. It is not uncommon for me to wake up, only to realize I had run out of ceral the day before, and have to go without breakfast. Or perhaps getting home after a long day, only to realize I needed to pick up milk in order to cook the meal that was planned. I either have to sacrifice the precious and limited time I have to get the required groceries, or sacrifice nutrition. That is where the idea of our mobile app "Stock it," comes into play. Our app will notify the user when they are on their way home that they are running low on their favorite grocery items, so that they do not forget to pick it up from the store. When you buy your item, simply scan the reciept, and the app will automatically add your items into your virtual pantry. Based on the size and user input, the app will then notify you when you are low, and the process will continue without ever having to interupt your daily life for forgetten items.
   
   
-  
+--- 
 # 2. Introduction  
 In our app, there are blah blah blah  
   
     
-
+---
 # 3. Design  
   The overall design for our app uses all free platforms for all aspects of our development stack. With this we can ensure the most risk-free development process possible. 
 
@@ -29,6 +29,6 @@ In our app, there are blah blah blah
 ## 3.3 Sequence Diagram  
   
 ## 3.4 Use Case Diagram  
-  
+--- 
 # 4. User Interface  
   
