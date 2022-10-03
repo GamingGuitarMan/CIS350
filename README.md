@@ -3,7 +3,7 @@
 ## Stock it - A reminder app so you never run out of food again  
 ## Made by:  
 ### Alex Young | insert title | G01702562  
-### Nathan Jorgensen | Back-End | g#  
+### Nathan Jorgensen | Back-End | G02343367  
 ### Mohamed Abdirahman | Front-End | g0164385  
 ---
 # 1. Abstract  
