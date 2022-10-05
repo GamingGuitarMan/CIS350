@@ -33,6 +33,9 @@ In our app, there are blah blah blah
   
 ## 3.4 Use Case Diagram  
 
+![image](https://user-images.githubusercontent.com/50177364/193958357-94924980-d7c1-4444-94a3-16d7819588d1.png)
+
+
 
 ![Use Case Diagram](UseCaseDiagram.pdf)
 ___
