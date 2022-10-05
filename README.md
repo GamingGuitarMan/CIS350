@@ -29,7 +29,9 @@ In our app, there are blah blah blah
 
 ## 3.2 Class Diagram  
 <img width="628" alt="Screen Shot 2022-10-04 at 9 47 19 PM" src="https://user-images.githubusercontent.com/71032586/193961838-81cd0e8b-0770-4e68-a27a-1f8efa9095fc.png">
-  
+
+![BackEnd UML](https://user-images.githubusercontent.com/50177364/193965701-6af769eb-9310-4c40-ac8c-1791e0752937.PNG)
+
 ## 3.3 Sequence Diagram  
 
 Login
