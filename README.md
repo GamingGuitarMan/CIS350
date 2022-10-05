@@ -10,23 +10,22 @@
 
 ---
 # 1. Abstract  
-One issue all of us in the team, and many others face, is getting distracted as our lives get ever more complex and busy. When commuting, or in passing time, people generally worry about what to do next, and what is coming up. It is not uncommon for me to wake up, only to realize I had run out of ceral the day before, and have to go without breakfast. Or perhaps getting home after a long day, only to realize I needed to pick up milk in order to cook the meal that was planned. I either have to sacrifice the precious and limited time I have to get the required groceries, or sacrifice nutrition. That is where the idea of our mobile app "Stock it," comes into play. Our app will notify the user when they are on their way home that they are running low on their favorite grocery items, so that they do not forget to pick it up from the store. When you buy your item, simply scan the reciept, and the app will automatically add your items into your virtual pantry. Based on the size and user input, the app will then notify you when you are low, and the process will continue without ever having to interupt your daily life for forgetten items.
+One issue all of us have as a team and many others face, is getting distracted as our lives get ever more complex and busy. When commuting, or in passing time, people generally worry about what to do next, and what is coming up. It is not uncommon for me to wake up, only to realize I had run out of cereal the day before, and have to go without breakfast. Prehaps after getting home from a long day, I realize that I needed to pick up milk in order to cook the meal that was planned. I either have to sacrifice the precious and limited time I have to get the required groceries, or sacrifice nutrition. That is where the idea of our mobile app "Stock it," comes into play. Our app will notify the user when they are on their way home that they are running low on their favorite grocery items, so that they do not forget to pick it up from the store. When you buy your item, simply scan the reciept, and the app will automatically add your items into your virtual pantry. Based on the size and user input, the app will then notify you when you are low, and the process will continue without ever having to interupt your daily life for forgetten items.
   
   
 --- 
 # 2. Introduction  
-In our app, it will start by asking the user to make an account and setup a profile. This profile will save and store the items in there account which will be unique to them and only them. Then the user can scan in an item's barcode to add it to their inventory, it will also ask for qunatity and how often the eat and or drink the item. With all this information it will notify them when they are low and whic local grocery stores have it in stock.
+In our app, it will start by asking the user to make an account and setup a profile. This profile will save and store the items in there account which is unique to them. Then the user can scan in an item's barcode to add it to their inventory, it will also ask for quantity and how often the eat and or drink the item. With all this information, it will notify them when they are low and whic local grocery stores have it in stock.
   
     
 ---
 # 3. Design  
-  The overall design for our app uses all free platforms for all aspects of our development stack. With this we can ensure the most risk-free development process possible. 
+The overall design for our app uses all free platforms for all aspects of our development stack. With this we can ensure the most risk-free development process possible. 
 
- 
 
 ## 3.1 Stack Design  
 
-  The stack of our app starts with MongoDB as our database. The free version using the AWS platform from Amazon is a hassle-free way to set up a database quickly and efficiently. We will then connect our database and server with JavaScript as was done in the demo. This then connected to our front-end user interface, developed using Flutter. We chose Flutter due to it's relative simplicity in the code, and it's ability to be used for iOS and Android alike. Reaching the widest audience is in our best interest if we want to help the most amount of people, and have our app be as widely known as possible. Not only this, but we did not want to exclude any particular subset of people that have a mobile phone.  
+The stack of our app starts with MongoDB as our database. The free version using the AWS platform from Amazon is a hassle-free way to set up a database quickly and efficiently. We will then connect our database and server with JavaScript as was done in the demo. This then connected to our front-end user interface, developed using Flutter. We chose Flutter due to it's relative simplicity in the code, and it's ability to be used for iOS and Android alike. Reaching the widest audience is in our best interest if we want to help the most amount of people, and have our app be as widely known as possible. Not only this, but we did not want to exclude any particular subset of people that have a mobile phone.  
 
 ## 3.2 Class Diagram  
 <img width="628" alt="Screen Shot 2022-10-04 at 9 47 19 PM" src="https://user-images.githubusercontent.com/71032586/193961838-81cd0e8b-0770-4e68-a27a-1f8efa9095fc.png">
