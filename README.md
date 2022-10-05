@@ -15,7 +15,7 @@ One issue all of us in the team, and many others face, is getting distracted as 
   
 --- 
 # 2. Introduction  
-In our app, there are blah blah blah  
+In our app, it will start by asking the user to make an account and setup a profile. This profile will save and store the items in there account which will be unique to them and only them. Then the user can scan in an item's barcode to add it to their inventory, it will also ask for qunatity and how often the eat and or drink the item. With all this information it will notify them when they are low and whic local grocery stores have it in stock.
   
     
 ---
