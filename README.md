@@ -42,7 +42,6 @@ Edit
 ![Sequence Edit](https://user-images.githubusercontent.com/50177364/193960825-3b29974e-14f5-4eb6-aa0a-e37338f6fed1.PNG)
 
 ## 3.4 Use Case Diagram  
-<img width="628" alt="Screen Shot 2022-10-04 at 9 47 19 PM" src="https://user-images.githubusercontent.com/71032586/193961838-81cd0e8b-0770-4e68-a27a-1f8efa9095fc.png">
 
 Login
 ![Login Use-Case](https://user-images.githubusercontent.com/50177364/193960771-6f350f50-1d8d-4a73-9c45-28a996d24132.PNG)
