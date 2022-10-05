@@ -32,24 +32,21 @@ The stack of our app starts with MongoDB as our database. The free version using
 
 ![BackEnd UML](https://user-images.githubusercontent.com/50177364/193965701-6af769eb-9310-4c40-ac8c-1791e0752937.PNG)
 
-
-## 3.3 Use Case Diagram  
-![UseCaseDiagram-1](https://user-images.githubusercontent.com/77644964/194074271-d9d35b2e-fe64-4594-bee2-02b41624d304.png)
-
-
-
-## 3.4 Sequence Diagram  
-
+## 3.3 Sequence Diagram  
 Login
-![Login Sequence](https://user-images.githubusercontent.com/50177364/193960858-e047f429-1a94-4f40-b10c-75538f09a9c9.PNG)
 
+![Login Sequence](https://user-images.githubusercontent.com/50177364/193960858-e047f429-1a94-4f40-b10c-75538f09a9c9.PNG)
 Edit
+
 ![Sequence Edit](https://user-images.githubusercontent.com/50177364/193960825-3b29974e-14f5-4eb6-aa0a-e37338f6fed1.PNG)
 ![CIS350-Project-SequenceDiagram-ManuallyAddUseCase-1](https://user-images.githubusercontent.com/77644964/194074221-446a8504-bd93-4316-bb1b-5491e309c3c3.png)
 
 ![CIS350-Project-SequenceDiagram-RemoveUseCase-1](https://user-images.githubusercontent.com/77644964/194074245-846d8e59-5858-43ad-a1f0-ea8bc475b3e9.png)
 ![CIS350-Project-SequenceDiagram-ScanUseCase-1](https://user-images.githubusercontent.com/77644964/194074259-c3f65c07-8186-45bc-8f92-4a46101a88bc.png)
+## 3.4 Use Case Diagram  
 
+
+![UseCaseDiagram-1](https://user-images.githubusercontent.com/77644964/194074271-d9d35b2e-fe64-4594-bee2-02b41624d304.png)
 
 
 # 4. User Interface  
