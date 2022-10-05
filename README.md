@@ -30,7 +30,6 @@ In our app, there are blah blah blah
 ## 3.2 Class Diagram  
   
 ## 3.3 Sequence Diagram  
-  ![image](https://github.com/GamingGuitarMan/CIS350/files/9711836/Sequence.-.Login.pdf)
 
 ## 3.4 Use Case Diagram  
 
