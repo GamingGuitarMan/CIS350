@@ -45,11 +45,6 @@ Edit
 ![CIS350-Project-SequenceDiagram-ScanUseCase-1](https://user-images.githubusercontent.com/77644964/194074259-c3f65c07-8186-45bc-8f92-4a46101a88bc.png)
 ## 3.4 Use Case Diagram  
 
-Login
-![Login Use-Case](https://user-images.githubusercontent.com/50177364/193960771-6f350f50-1d8d-4a73-9c45-28a996d24132.PNG)
-
-Edit
-![Use-Case Edit](https://user-images.githubusercontent.com/50177364/193960787-bc9abc02-6170-4e58-ab04-bf76a91961ec.PNG)
 
 ![UseCaseDiagram-1](https://user-images.githubusercontent.com/77644964/194074271-d9d35b2e-fe64-4594-bee2-02b41624d304.png)
 
