@@ -4,7 +4,7 @@
 ## Made by:  
 
 ### Alex Young | G01702562  
-### Nathan Jorgensen | g#  
+### Nathan Jorgensen | G02343367  
 ### Mohamed Abdirahman | G0164385 
  
 
@@ -30,7 +30,8 @@ In our app, there are blah blah blah
 ## 3.2 Class Diagram  
   
 ## 3.3 Sequence Diagram  
-  
+  [Sequence - Login.pdf](https://github.com/GamingGuitarMan/CIS350/files/9711836/Sequence.-.Login.pdf)
+
 ## 3.4 Use Case Diagram  
 
 ![image](https://user-images.githubusercontent.com/50177364/193958357-94924980-d7c1-4444-94a3-16d7819588d1.png)
