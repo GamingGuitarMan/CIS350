@@ -49,13 +49,12 @@ Login
 
 Edit
 ![Use-Case Edit](https://user-images.githubusercontent.com/50177364/193960787-bc9abc02-6170-4e58-ab04-bf76a91961ec.PNG)
+![CIS350-Project-SequenceDiagram-ManuallyAddUseCase-1](https://user-images.githubusercontent.com/77644964/194074221-446a8504-bd93-4316-bb1b-5491e309c3c3.png)
 
-![Use Case Diagram](UseCaseDiagram.pdf)
-___
-<img src="UseCaseDiagram.pdf" alt="Use Case Diagram" width="200"/>
-___  
+![CIS350-Project-SequenceDiagram-RemoveUseCase-1](https://user-images.githubusercontent.com/77644964/194074245-846d8e59-5858-43ad-a1f0-ea8bc475b3e9.png)
+![CIS350-Project-SequenceDiagram-ScanUseCase-1](https://user-images.githubusercontent.com/77644964/194074259-c3f65c07-8186-45bc-8f92-4a46101a88bc.png)
+![UseCaseDiagram-1](https://user-images.githubusercontent.com/77644964/194074271-d9d35b2e-fe64-4594-bee2-02b41624d304.png)
 
-![Use Case Diagram](https://github.com/GamingGuitarMan/CIS350/blob/main/UseCaseDiagram.pdf "Use Case Diagram")
 
 # 4. User Interface  
   <img width="208" alt="Screen Shot 2022-10-04 at 9 25 56 PM" src="https://user-images.githubusercontent.com/71032586/193959633-1687c495-bf04-4959-bf56-7c91fdcc0ba7.png"> 
