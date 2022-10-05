@@ -22,7 +22,8 @@ In our app, it will start by asking the user to make an account and setup a prof
 # 3. Design  
   The overall design for our app uses all free platforms for all aspects of our development stack. With this we can ensure the most risk-free development process possible. 
 
-  
+ 
+
 ## 3.1 Stack Design  
 
   The stack of our app starts with MongoDB as our database. The free version using the AWS platform from Amazon is a hassle-free way to set up a database quickly and efficiently. We then connected that to our server, ************** . This then connected to our front-end user interface, developed using Flutter. We chose Flutter due to it's relative simplicity in the code, and it's ability to be used for iOS and Android alike. Reaching the widest audience is in our best interest if we want to help the most amount of people, and have our app be as widely known as possible. Not only this, but we did not want to exclude any particular subset of people that have a mobile phone.  
@@ -57,5 +58,10 @@ ___
 ![Use Case Diagram](https://github.com/GamingGuitarMan/CIS350/blob/main/UseCaseDiagram.pdf "Use Case Diagram")
 
 # 4. User Interface  
-  <img width="208" alt="Screen Shot 2022-10-04 at 9 25 56 PM" src="https://user-images.githubusercontent.com/71032586/193959633-1687c495-bf04-4959-bf56-7c91fdcc0ba7.png">
+  <img width="208" alt="Screen Shot 2022-10-04 at 9 25 56 PM" src="https://user-images.githubusercontent.com/71032586/193959633-1687c495-bf04-4959-bf56-7c91fdcc0ba7.png"> 
+  Login Screen
+  <img width="208" alt="Screen Shot 2022-10-05 at 9 28 52 AM" src="https://user-images.githubusercontent.com/71032586/194072316-d7d4eb34-995a-4426-996b-a469fa123c17.png"> 
+  Inventory Screen
+<img width="205" alt="Screen Shot 2022-10-05 at 9 29 28 AM" src="https://user-images.githubusercontent.com/71032586/194072414-57250f36-cffc-45e7-8cc7-3a44f05ca825.png"> 
+Add Item Screen
 
