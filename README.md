@@ -45,4 +45,5 @@ ___
 ![Use Case Diagram](https://github.com/GamingGuitarMan/CIS350/blob/main/UseCaseDiagram.pdf "Use Case Diagram")
 
 # 4. User Interface  
-  
+  <img width="208" alt="Screen Shot 2022-10-04 at 9 25 56 PM" src="https://user-images.githubusercontent.com/71032586/193959633-1687c495-bf04-4959-bf56-7c91fdcc0ba7.png">
+
