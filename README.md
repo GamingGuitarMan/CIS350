@@ -26,7 +26,7 @@ In our app, it will start by asking the user to make an account and setup a prof
 
 ## 3.1 Stack Design  
 
-  The stack of our app starts with MongoDB as our database. The free version using the AWS platform from Amazon is a hassle-free way to set up a database quickly and efficiently. We then connected that to our server, ************** . This then connected to our front-end user interface, developed using Flutter. We chose Flutter due to it's relative simplicity in the code, and it's ability to be used for iOS and Android alike. Reaching the widest audience is in our best interest if we want to help the most amount of people, and have our app be as widely known as possible. Not only this, but we did not want to exclude any particular subset of people that have a mobile phone.  
+  The stack of our app starts with MongoDB as our database. The free version using the AWS platform from Amazon is a hassle-free way to set up a database quickly and efficiently. We will then connect our database and server with JavaScript as was done in the demo. This then connected to our front-end user interface, developed using Flutter. We chose Flutter due to it's relative simplicity in the code, and it's ability to be used for iOS and Android alike. Reaching the widest audience is in our best interest if we want to help the most amount of people, and have our app be as widely known as possible. Not only this, but we did not want to exclude any particular subset of people that have a mobile phone.  
 
 ## 3.2 Class Diagram  
 <img width="628" alt="Screen Shot 2022-10-04 at 9 47 19 PM" src="https://user-images.githubusercontent.com/71032586/193961838-81cd0e8b-0770-4e68-a27a-1f8efa9095fc.png">
