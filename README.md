@@ -15,7 +15,7 @@ One issue all of us in the team, and many others face, is getting distracted as 
   
 --- 
 # 2. Introduction  
-In this an app you habe the abilty to add and modify certin items you buy. It will keep track of all the things we buy for breakfast. In our database we can see when we will run out and it will notify as of such. It will also keep track of when we pass our local grocery store and remind us to stop and restock.
+In our app, there are blah blah blah  
   
     
 ---
@@ -31,11 +31,19 @@ In this an app you habe the abilty to add and modify certin items you buy. It wi
   
 ## 3.3 Sequence Diagram  
 
+Login
+![Login Sequence](https://user-images.githubusercontent.com/50177364/193960858-e047f429-1a94-4f40-b10c-75538f09a9c9.PNG)
+
+Edit
+![Sequence Edit](https://user-images.githubusercontent.com/50177364/193960825-3b29974e-14f5-4eb6-aa0a-e37338f6fed1.PNG)
+
 ## 3.4 Use Case Diagram  
 
-![image](https://user-images.githubusercontent.com/50177364/193958357-94924980-d7c1-4444-94a3-16d7819588d1.png)
+Login
+![Login Use-Case](https://user-images.githubusercontent.com/50177364/193960771-6f350f50-1d8d-4a73-9c45-28a996d24132.PNG)
 
-
+Edit
+![Use-Case Edit](https://user-images.githubusercontent.com/50177364/193960787-bc9abc02-6170-4e58-ab04-bf76a91961ec.PNG)
 
 ![Use Case Diagram](UseCaseDiagram.pdf)
 ___
@@ -45,8 +53,5 @@ ___
 ![Use Case Diagram](https://github.com/GamingGuitarMan/CIS350/blob/main/UseCaseDiagram.pdf "Use Case Diagram")
 
 # 4. User Interface  
-  <img width="208" alt="Screen Shot 2022-10-04 at 9 25 56 PM" src="https://user-images.githubusercontent.com/71032586/193959633-1687c495-bf04-4959-bf56-7c91fdcc0ba7.png"><img width="209" alt="Screen Shot 2022-10-04 at 9 26 30 PM" src="https://user-images.githubusercontent.com/71032586/193959688-7b20a5df-02f9-4ff6-99bc-9cc713a85b8c.png">
-  <img width="208" alt="Screen Shot 2022-10-04 at 9 27 27 PM" src="https://user-images.githubusercontent.com/71032586/193959791-9ee2a9d0-4650-4d70-bdc3-2a3419b2da25.png">
-
-
+  <img width="208" alt="Screen Shot 2022-10-04 at 9 25 56 PM" src="https://user-images.githubusercontent.com/71032586/193959633-1687c495-bf04-4959-bf56-7c91fdcc0ba7.png">
 
