@@ -28,7 +28,8 @@ The overall design for our app uses all free platforms for all aspects of our de
 The stack of our app starts with MongoDB as our database. The free version using the AWS platform from Amazon is a hassle-free way to set up a database quickly and efficiently. This then connected to our front-end user interface, developed using Flutter. We chose Flutter due to it's relative simplicity in the code, and it's ability to be used for iOS and Android alike. Reaching the widest audience is in our best interest if we want to help the most amount of people, and have our app be as widely known as possible. Not only this, but we did not want to exclude any particular subset of people that have a mobile phone.  
 
 ## 3.2 Class Diagram  
-<img width="628" alt="Screen Shot 2022-10-04 at 9 47 19 PM" src="https://user-images.githubusercontent.com/71032586/193961838-81cd0e8b-0770-4e68-a27a-1f8efa9095fc.png">
+Front End<img width="593" alt="Screen Shot 2022-10-06 at 11 29 32 PM" src="https://user-images.githubusercontent.com/71032586/194461947-c7c371a0-e602-41bb-8d4f-035171b9d962.png">
+
 
 ![BackEnd UML](https://user-images.githubusercontent.com/50177364/193965701-6af769eb-9310-4c40-ac8c-1791e0752937.PNG)
 
