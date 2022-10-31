@@ -1,7 +1,14 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-void main() => runApp(MyApp());
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -10,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Stock it!',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -21,9 +28,46 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.lightGreen,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Stock it!'),
+    );
+  }
+}
+
+class itemList extends StatefulWidget {
+  @override
+  _itemListState createState() => _itemListState();
+}
+
+class _itemListState extends State<itemList> {
+  final Stream<QuerySnapshot> _itemStream =
+      FirebaseFirestore.instance.collection('item').snapshots();
+
+  @override
+  Widget build(BuildContext context) {
+    return StreamBuilder<QuerySnapshot>(
+      stream: _itemStream,
+      builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
+        if (snapshot.hasError) {
+          return const Text('Something went wrong');
+        }
+
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return const CircularProgressIndicator();
+        }
+
+        return ListView(
+          children: snapshot.data!.docs.map((DocumentSnapshot document) {
+            Map<String, dynamic> data =
+                document.data()! as Map<String, dynamic>;
+            return ListTile(
+              title: Text(data['name']),
+              subtitle: Text(data['shelf-life']),
+            );
+          }).toList(),
+        );
+      },
     );
   }
 }
@@ -60,6 +104,14 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void addItem() {
+    setState(() {
+      FirebaseFirestore.instance
+          .collection('item')
+          .add({'name': 'butter', 'shelf-life': 99});
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -70,9 +122,12 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
+        title: Text(widget.title,
+            style: GoogleFonts.architectsDaughter(
+                fontSize: 50, fontWeight: FontWeight.w700)),
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
@@ -91,22 +146,18 @@ class _MyHomePageState extends State<MyHomePage> {
           // how it positions its children. Here we use mainAxisAlignment to
           // center the children vertically; the main axis here is the vertical
           // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
+          // horizontal).,
           children: <Widget>[
             const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              'Item List',
+              style: TextStyle(fontSize: 40),
             ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
+        onPressed: addItem,
+        tooltip: 'addItem',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
