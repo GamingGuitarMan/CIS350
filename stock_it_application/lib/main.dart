@@ -40,6 +40,8 @@ class itemList extends StatefulWidget {
   _itemListState createState() => _itemListState();
 }
 
+// Creating class to attempt to display items to app
+// not currently working
 class _itemListState extends State<itemList> {
   final Stream<QuerySnapshot> _itemStream =
       FirebaseFirestore.instance.collection('item').snapshots();
