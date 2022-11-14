@@ -4,29 +4,28 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:get/get.dart';
 import 'package:stock_it_application/Binding/controller_binding.dart';
+import 'package:stock_it_application/Binding/homeBinding.dart';
 import 'package:stock_it_application/Views/homepage.dart';
 
-Future main() async {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Stock it!',
-      theme: ThemeData(
-        primarySwatch: Colors.lightGreen,
-      ),
-      home: HomePage(),
-      initialBinding: ControllerBinding(),
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Stock it!',
+        theme: ThemeData(
+          primarySwatch: Colors.lightGreen,
+        ),
+        home: HomeView(),
+        initialBinding: HomeBinding());
   }
 }

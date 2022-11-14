@@ -9,16 +9,16 @@ class ItemController extends GetxController {
   Future<void> getData() async {
     try {
       QuerySnapshot items = await FirebaseFirestore.instance
-          .collection('item')
-          .orderBy('shelf-life')
+          .collection('items')
+          .orderBy('shelfLife')
           .get();
       itemList.clear();
       for (var item in items.docs) {
-        itemList.add(ItemModel(item['name'], item['shelf-Life']));
+        itemList.add(ItemModel(item['name'], item['shelfLife']));
       }
       isLoading = false;
     } catch (e) {
-      Get.snackbar('Error', '${e.toString()}');
+      Get.snackbar('Error', e.toString());
     }
   }
 }
