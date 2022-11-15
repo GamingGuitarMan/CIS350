@@ -13,7 +13,7 @@ class CustomFullScreenDialog {
         onWillPop: () => Future.value(false),
       ),
       barrierDismissible: false,
-      barrierColor: Color(0xff141A31).withOpacity(.3),
+      barrierColor: Color.fromARGB(129, 20, 40, 49).withOpacity(.3),
       useSafeArea: true,
     );
   }

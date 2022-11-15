@@ -52,7 +52,7 @@ class HomeController extends GetxController {
             context: Get.context,
             title: "Item Added",
             message: "Item added successfully",
-            backgroudColor: Colors.green);
+            backgroudColor: Color.fromARGB(255, 116, 163, 118));
       }).catchError((error) {
         CustomFullScreenDialog.cancelDialog();
         CustomSnackBar.showSnackBar(
@@ -73,7 +73,7 @@ class HomeController extends GetxController {
             context: Get.context,
             title: "Item updated",
             message: "Item updated successfully",
-            backgroudColor: Colors.green);
+            backgroudColor: Color.fromARGB(255, 109, 162, 111));
       }).catchError((error) {
         CustomFullScreenDialog.cancelDialog();
         CustomSnackBar.showSnackBar(
@@ -110,7 +110,7 @@ class HomeController extends GetxController {
           context: Get.context,
           title: "Item deleted",
           message: "Item deleted successfully",
-          backgroudColor: Colors.green);
+          backgroudColor: Color.fromARGB(255, 124, 178, 126));
     }).catchError((error) {
       CustomFullScreenDialog.cancelDialog();
       CustomSnackBar.showSnackBar(

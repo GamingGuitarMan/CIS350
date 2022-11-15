@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:stock_it_application/Controller/homeController.dart';
-import 'package:stock_it_application/Controller/item_controller.dart';
+import 'package:stock_it_application/Controller/itemController.dart';
 import '../Controller/homeController.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -100,7 +100,7 @@ class HomeView extends GetView<HomeController> {
           topRight: Radius.circular(16),
           topLeft: Radius.circular(16),
         ),
-        color: Colors.cyan,
+        color: Color.fromARGB(255, 202, 240, 233),
       ),
       child: Padding(
           padding:
