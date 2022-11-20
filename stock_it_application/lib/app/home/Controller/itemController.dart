@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
-import 'package:stock_it_application/Model/item_model.dart';
+import '../itemModel.dart';
 
 class ItemController extends GetxController {
   var isLoading = false;
@@ -14,7 +14,10 @@ class ItemController extends GetxController {
           .get();
       itemList.clear();
       for (var item in items.docs) {
-        itemList.add(ItemModel(item['name'], item['shelfLife']));
+        itemList.add(ItemModel(
+            docId: item['docId'],
+            name: item['name'],
+            shelfLife: item['shelfLife']));
       }
       isLoading = false;
     } catch (e) {

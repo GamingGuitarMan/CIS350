@@ -1,8 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:stock_it_application/Views/customFullScrenDialog.dart';
+import 'package:stock_it_application/app/home/Views/customFullScrenDialog.dart';
 import '../Views/customSnackBar.dart';
+import '../itemModel.dart';
 
 class HomeController extends GetxController {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
@@ -11,13 +12,19 @@ class HomeController extends GetxController {
   FirebaseFirestore firebaseFirestore = FirebaseFirestore.instance;
 
   late CollectionReference collectionReference;
+  late CollectionReference timeReference;
+
+  RxList<ItemModel> items = RxList<ItemModel>([]);
 
   @override
   void onInit() {
     super.onInit();
     nameController = TextEditingController();
     shelfLifeController = TextEditingController();
-    collectionReference = firebaseFirestore.collection("items");
+    collectionReference = firebaseFirestore.collection('items');
+    timeReference = firebaseFirestore.collection('time');
+    items.bindStream(getAllItems());
+    timeUpdate();
   }
 
   String? validateName(String value) {
@@ -101,6 +108,9 @@ class HomeController extends GetxController {
     shelfLifeController.clear();
   }
 
+  Stream<List<ItemModel>> getAllItems() => collectionReference.snapshots().map(
+      (query) => query.docs.map((item) => ItemModel.fromMap(item)).toList());
+
   void deleteData(String docId) {
     CustomFullScreenDialog.showDialog();
     collectionReference.doc(docId).delete().whenComplete(() {
@@ -119,5 +129,20 @@ class HomeController extends GetxController {
           message: "Something went wrong",
           backgroudColor: Colors.red);
     });
+  }
+
+  void timeUpdate() {
+    DateTime lastTime = collectionReference.doc('1').get() as DateTime;
+    Duration timeDiff = DateTime.now().difference(lastTime);
+    int differenceInDays = timeDiff.inDays.floor();
+    if (differenceInDays > 0) {
+      decrementShelfLife(differenceInDays);
+    } else {
+      // do nothing because no days have passed
+    }
+  }
+
+  void decrementShelfLife(int differenceInDays) {
+    for (var element in items) {}
   }
 }

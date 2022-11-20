@@ -3,29 +3,39 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:get/get.dart';
-import 'package:stock_it_application/Binding/controller_binding.dart';
-import 'package:stock_it_application/Binding/homeBinding.dart';
-import 'package:stock_it_application/Views/homepage.dart';
+import 'package:stock_it_application/app/home/Binding/controller_binding.dart';
+import 'package:stock_it_application/app/home/Binding/homeBinding.dart';
+import 'package:stock_it_application/app/home/Views/homepage.dart';
 
-Future<void> main() async {
+import 'app/routes/app_pages.dart';
+
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return GetMaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Stock it!',
-        theme: ThemeData(
-          primarySwatch: Colors.lightGreen,
+  runApp(
+    GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "Stock it!",
+      initialRoute: AppPages.INITAL,
+      getPages: AppPages.routes,
+      themeMode: ThemeMode.dark,
+      darkTheme: ThemeData.dark().copyWith(
+        primaryColor: Color(0xff141A31),
+        primaryColorDark: Color(0xff081029),
+        scaffoldBackgroundColor: Color(0xff141A31),
+        textSelectionTheme: TextSelectionThemeData(cursorColor: Colors.amber),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ButtonStyle(
+              shape: MaterialStateProperty.all(
+                RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+              ),
+              backgroundColor: MaterialStateProperty.all(Colors.blueGrey)),
         ),
-        home: HomeView(),
-        initialBinding: HomeBinding());
-  }
+        colorScheme:
+            ColorScheme.fromSwatch().copyWith(secondary: Colors.yellow),
+      ),
+    ),
+  );
 }
