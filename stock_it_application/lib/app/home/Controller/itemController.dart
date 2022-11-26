@@ -1,4 +1,4 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
+/*import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
 import '../itemModel.dart';
 
@@ -25,3 +25,4 @@ class ItemController extends GetxController {
     }
   }
 }
+*/

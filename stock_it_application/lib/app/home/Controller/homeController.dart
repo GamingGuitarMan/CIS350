@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:stock_it_application/app/home/Views/customFullScrenDialog.dart';
 import '../Views/customSnackBar.dart';
 import '../itemModel.dart';
+import '../timeModel.dart';
 
 class HomeController extends GetxController {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
@@ -22,8 +23,8 @@ class HomeController extends GetxController {
     nameController = TextEditingController();
     shelfLifeController = TextEditingController();
     collectionReference = firebaseFirestore.collection('items');
-    timeReference = firebaseFirestore.collection('time');
     items.bindStream(getAllItems());
+    print("making to onInit");
     timeUpdate();
   }
 
@@ -131,18 +132,42 @@ class HomeController extends GetxController {
     });
   }
 
-  void timeUpdate() {
-    DateTime lastTime = collectionReference.doc('1').get() as DateTime;
-    Duration timeDiff = DateTime.now().difference(lastTime);
-    int differenceInDays = timeDiff.inDays.floor();
-    if (differenceInDays > 0) {
-      decrementShelfLife(differenceInDays);
-    } else {
-      // do nothing because no days have passed
-    }
+  void timeUpdate() async {
+    final docRef = firebaseFirestore.collection('time').doc('1');
+    docRef.get().then(
+      (DocumentSnapshot doc) {
+        final data = doc.data() as Map<String, dynamic>;
+        final currentTime = Timestamp.fromMillisecondsSinceEpoch(
+            DateTime.now().millisecondsSinceEpoch);
+
+        var lastTimestamp;
+        // getting timpstamp from "lastTime" key
+        data.forEach((key, value) {
+          lastTimestamp = value;
+        });
+        // getting day difference from the current time and last time in database
+        var dayDiff = currentTime
+            .toDate()
+            .difference(lastTimestamp.toDate())
+            .inDays
+            .floor();
+        if (dayDiff > 0) {
+          decrementShelfLife(dayDiff);
+        }
+        // add new time to databse
+        docRef.update({'lastTime': currentTime});
+      },
+      onError: (e) => print("Error getting time: $e"),
+    );
   }
 
-  void decrementShelfLife(int differenceInDays) {
-    for (var element in items) {}
+  void decrementShelfLife(int dayDiff) {
+    for (var item in items) {
+      int tempShelfLife = int.parse(item.shelfLife as String);
+      tempShelfLife -= dayDiff;
+      collectionReference
+          .doc(item.docId)
+          .update({'name': item.name, 'shelfLife': tempShelfLife.toString()});
+    }
   }
 }

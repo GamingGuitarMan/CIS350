@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class TimeModel {
-  String? docId;
+  String? docId = '1';
   DateTime? lastTime;
 
   TimeModel({this.docId, this.lastTime});
