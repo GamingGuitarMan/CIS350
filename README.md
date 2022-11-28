@@ -70,3 +70,14 @@ Scan Use
 <img width="205" alt="Screen Shot 2022-10-05 at 9 29 28 AM" src="https://user-images.githubusercontent.com/71032586/194072414-57250f36-cffc-45e7-8cc7-3a44f05ca825.png"> 
 Add Item Screen
 
+
+Risk analysis and Retrospective:
+A chapter in the documentation that talks about:
+1. What were the risks, what were the problems, how did you deal with them during the
+project.
+
+Some problem we dealt with was getting our platforms to communicate effectively together. For our group, this consisted of using flutter to communicate with the android emulator. This was resolved by accessing our terminal and correcting the path required for flutter to access the correct Andriod SDK. 
+Another issue we came across was a back-and-forth without a display screen. We would get it to successfully work correctly but fail to add on top of that. Having a good functioning base to go back to was very helpful and made it easier to find and fix the errors.
+The risk for projects was having our database updated accordingly. If the user added or deleted an 'item' it should be updated as so. At first, we approached the project to just have 'add item' but we realized it would not make sense to only have an add so we incorporated a remove/delete button too. This was risky because it added another infrastructure for just deleting. 
+
+2. What was done and what could have been done better.
