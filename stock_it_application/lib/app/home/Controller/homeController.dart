@@ -25,7 +25,10 @@ class HomeController extends GetxController {
     collectionReference = firebaseFirestore.collection('items');
     items.bindStream(getAllItems());
     print("making to onInit");
-    timeUpdate();
+    Timer threeHourTimer = Timer.periodic(Duration(seconds: 5), (timer) {
+      System.out.println("Hi");
+      timeUpdate();
+    });
   }
 
   String? validateName(String value) {
