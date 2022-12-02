@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -24,9 +26,7 @@ class HomeController extends GetxController {
     shelfLifeController = TextEditingController();
     collectionReference = firebaseFirestore.collection('items');
     items.bindStream(getAllItems());
-    print("making to onInit");
-    Timer threeHourTimer = Timer.periodic(Duration(seconds: 5), (timer) {
-      System.out.println("Hi");
+    Timer threeHourTimer = Timer.periodic(Duration(hours: 3), (timer) {
       timeUpdate();
     });
   }
