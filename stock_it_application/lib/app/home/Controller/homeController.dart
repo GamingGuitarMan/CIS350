@@ -163,6 +163,10 @@ class HomeController extends GetxController {
     );
   }
 
+  shopTime(DateTime newTime) {
+    firebaseFirestore.collection('time').doc('2').update({'shop': newTime});
+  }
+
   void decrementShelfLife(int dayDiff) {
     for (var item in items) {
       int tempShelfLife = int.parse(item.shelfLife as String);

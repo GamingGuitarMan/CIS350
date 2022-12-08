@@ -7,6 +7,8 @@ import 'package:google_fonts/google_fonts.dart';
 import '../Controller/homeController.dart';
 
 class HomeView extends GetView<HomeController> {
+  DateTime currentDate = DateTime.now();
+  TimeOfDay currentTime = TimeOfDay.now();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,6 +22,31 @@ class HomeView extends GetView<HomeController> {
                 fontStyle: FontStyle.italic,
                 letterSpacing: 2)),
         actions: [
+          IconButton(
+            icon: const Icon(Icons.calendar_month_rounded),
+            onPressed: () async {
+              DateTime? newDate = await showDatePicker(
+                  context: context,
+                  // change initial date to date selected in firebase
+                  initialDate: currentDate,
+                  firstDate: DateTime(2000),
+                  lastDate: DateTime(3000));
+
+              if (newDate == null) return;
+
+              final time = await showTimePicker(
+                  context: context,
+                  initialTime: TimeOfDay(
+                      hour: currentDate.hour, minute: currentDate.minute));
+
+              if (time == null) return;
+
+              DateTime newShoppingTime = DateTime(newDate.year, newDate.month,
+                  newDate.day, time.hour, time.minute);
+              controller.shopTime(newShoppingTime);
+              // add functionality to add to firebase here
+            },
+          ),
           IconButton(
             icon: const Icon(Icons.add),
             onPressed: () {
