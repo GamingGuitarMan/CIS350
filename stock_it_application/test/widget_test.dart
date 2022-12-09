@@ -37,35 +37,35 @@ void main() {
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:get/route_manager.dart';
-import 'dart:async';
+//import 'package:flutter/material.dart';
+//import 'package:flutter_test/flutter_test.dart';
+//import 'package:get/route_manager.dart';
+//import 'dart:async';
 
-import 'package:stock_it_application/app/home/Binding/controller_binding.dart';
-import 'package:stock_it_application/app/home/Binding/homeBinding.dart';
-import 'package:stock_it_application/app/home/Controller/homeController.dart';
-import 'package:stock_it_application/app/home/Views/homepage.dart';
-import 'package:stock_it_application/main.dart';
-import 'package:stock_it_application/app/home/Views/customFullScrenDialog.dart';
-import 'package:stock_it_application/app/home/Controller/homeController.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+//import 'package:stock_it_application/app/home/Binding/controller_binding.dart';
+//import 'package:stock_it_application/app/home/Binding/homeBinding.dart';
+//import 'package:stock_it_application/app/home/Controller/homeController.dart';
+//import 'package:stock_it_application/app/home/Views/homepage.dart';
+//import 'package:stock_it_application/main.dart';
+//import 'package:stock_it_application/app/home/Views/customFullScrenDialog.dart';
+//import 'package:stock_it_application/app/home/Controller/homeController.dart';
+//import 'package:firebase_core/firebase_core.dart';
+//import 'package:cloud_firestore/cloud_firestore.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+//void main() async {
+// WidgetsFlutterBinding.ensureInitialized();
+//  await Firebase.initializeApp();
 
-  test(HomeController(), () {
-    Firebase.initializeApp();
+//  test(HomeController(), () {
+//    Firebase.initializeApp();
 
-    final saveUpdateTest = HomeController().saveUpdateItem;
+//    final saveUpdateTest = HomeController().saveUpdateItem;
 
-    saveUpdateTest("Eggs", "4", "2", 2); // error test
+//    saveUpdateTest("Eggs", "4", "2", 2); // error test
 
-    expect(saveUpdateTest, "Eggs , 4, 1, 2");
-  });
-}
+//    expect(saveUpdateTest, "Eggs , 4, 1, 2");
+//  });
+//}
 
 /**
  
@@ -140,6 +140,37 @@ void main() async {
 
 
  */
+
+import 'dart:async';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:stock_it_application/lib/app/home/Controller/homeController.dart';
+import 'package:stock_it_application/lib/app/home/Controller/itemModel.dart';
+import 'package:stock_it_application/lib/app/home/Controller/timeModel.dart';
+import 'package:stock_it_application/app/home/Views/customFullScrenDialog.dart';
+import 'package:stock_it_application/app/home/Views/customSnackBar.dart';
+
+const MessagesCollection  'messages';
+
+void main() {
+  testWidgets('shows messages', (WidgetTester tester) async {
+    final firestore = FakeFirebaseFirestore();
+    await firestore.collection(MessagesCollection).add({
+      'Eggs' :'5' : 'StockIt' : FieldValue.serverTimestamp(),
+    })
+
+    await tester.pumpWidget(MaterialApp(
+        title: 'stock_it_application', home: MyHomePage(firestore: firestore)));
+
+        await tester.idle();
+        await tester.pump();
+
+        expect(find.text('Hello world!'), findsOneWidget);
+        expect(find.text('Message 1 of 1'), findsOneWidget);
+  });
+}
 
 
 
