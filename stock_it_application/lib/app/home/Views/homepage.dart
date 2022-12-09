@@ -22,27 +22,31 @@ class HomeView extends GetView<HomeController> {
                 fontStyle: FontStyle.italic,
                 letterSpacing: 2)),
         actions: [
+          // Calendar button to schedule
           IconButton(
             icon: const Icon(Icons.calendar_month_rounded),
             onPressed: () async {
+              // shows DatePicker to select desired date
               DateTime? newDate = await showDatePicker(
                   context: context,
                   // change initial date to date selected in firebase
                   initialDate: currentDate,
                   firstDate: DateTime(2000),
                   lastDate: DateTime(3000));
-
+              // return immediately on cancel
               if (newDate == null) return;
 
+              // shows TimePicker to select desired time
               final time = await showTimePicker(
                   context: context,
                   initialTime: TimeOfDay(
                       hour: currentDate.hour, minute: currentDate.minute));
-
+              // return immediately on cancel
               if (time == null) return;
-
+              // creates new DateTime by using the selected date and time
               DateTime newShoppingTime = DateTime(newDate.year, newDate.month,
                   newDate.day, time.hour, time.minute);
+              // calls "shopTime()" in homeController class
               controller.shopTime(newShoppingTime);
               // add functionality to add to firebase here
             },
