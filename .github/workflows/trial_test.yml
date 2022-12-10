@@ -18,7 +18,7 @@ jobs:
     - name: Install Flutter SDK
       run: |
         git clone https://github.com/flutter/flutter.git -b stable
-        export PATH="$PATH:`pwd`/flutter/bin"
+        export PATH="$PATH:  ./flutter/bin"
     - name: Changing Current directory
       run: cd ./flutter
     - name: Install dependencies
