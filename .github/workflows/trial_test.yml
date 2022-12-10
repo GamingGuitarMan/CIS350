@@ -1,12 +1,13 @@
 name: Integration Test
 
 on:
-  label:
+  push:
+    branches: [ master ]
+  manual:
     inputs:
       branch:
         description: 'Branch to run tests on'
         required: true
-    branches: [ master ]
 
 jobs:
   test:
@@ -14,8 +15,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        ref: ${{ inputs.branch }}
     - name: Install dependencies
       run: flutter pub get
     - name: Run tests
       run: flutter test CIS350/stock_it_application/test/trial_test.dart
-
