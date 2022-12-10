@@ -4,8 +4,14 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:stock_it_application/app/home/Controller/homeController.dart';
+import 'package:stock_it_application/main.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+void main() async {
+  // Access Firebase app that was initialized in the "FIREFOX" file
+  TestWidgetsFlutterBinding.ensureInitialized();
+  final app = await Firebase.initializeApp();
+
   group('saveUpdateItemTEST', () {
     final formKey = GlobalKey<FormState>();
     final collectionReference = FirebaseFirestore.instance.collection('items');
@@ -49,14 +55,10 @@ void main() {
     });
   });
 
-
-
-
-
-
-group('timeUpdateTEST', () {
+  group('timeUpdateTEST', () {
     final collectionReference = FirebaseFirestore.instance.collection('items');
-    final timeReference = FirebaseFirestore.instance.collection('time').doc('1');
+    final timeReference =
+        FirebaseFirestore.instance.collection('time').doc('1');
 
     // Set up Firebase before running each test
     setUp(() async {
@@ -75,7 +77,7 @@ group('timeUpdateTEST', () {
       });
     });
 
-test('updates shelf life of items when time has passed', () async {
+    test('updates shelf life of items when time has passed', () async {
       // Add an initial item to the collection
       final initialDocRef = await collectionReference.add({
         'name': 'Initial Item Name',
@@ -97,10 +99,10 @@ test('updates shelf life of items when time has passed', () async {
       final updatedItem = updatedSnapshot.data() ?? {};
 
       expect(updatedItem['shelfLife'], 3);
-
     });
 
-    test('does not update shelf life of items when no time has passed', () async {
+    test('does not update shelf life of items when no time has passed',
+        () async {
       // Add an initial item to the collection
       final initialDocRef = await collectionReference.add({
         'name': 'Initial Item Name',
@@ -109,7 +111,7 @@ test('updates shelf life of items when time has passed', () async {
 
       // Add a time record to the collection
       await timeReference.set({
-        'lastTime' : Timestamp.fromMillisecondsSinceEpoch(
+        'lastTime': Timestamp.fromMillisecondsSinceEpoch(
             DateTime.now().subtract(Duration(hours: 2)).millisecondsSinceEpoch),
       });
 
