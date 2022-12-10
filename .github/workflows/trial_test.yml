@@ -1,9 +1,7 @@
 name: Integration Test
 
 on:
-  push:
-    branches: [ master ]
-  manual:
+  workflow_dispatch:
     inputs:
       branch:
         description: 'Branch to run tests on'
