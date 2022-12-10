@@ -96,7 +96,6 @@ test('updates shelf life of items when time has passed', () async {
       // Fetch the updated item from the collection
       final updatedSnapshot = await initialDocRef.get();
       final updatedItem = updatedSnapshot.data() ?? {};
-
       expect(updatedItem['shelfLife'], 3);
 
     });
