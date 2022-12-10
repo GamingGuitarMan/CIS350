@@ -3,14 +3,18 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:get/get.dart';
 import 'package:stock_it_application/app/home/Controller/homeController.dart';
 import 'package:stock_it_application/main.dart';
 import 'package:firebase_core/firebase_core.dart';
+import '../test/mock.dart';
 
 void main() async {
   // Access Firebase app that was initialized in the "FIREFOX" file
   TestWidgetsFlutterBinding.ensureInitialized();
-  final app = await Firebase.initializeApp();
+
+  setupFirebaseAuthMocks();
+  await Firebase.initializeApp();
 
   group('saveUpdateItemTEST', () {
     final formKey = GlobalKey<FormState>();
