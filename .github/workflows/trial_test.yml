@@ -13,5 +13,4 @@ jobs:
     - name: Install dependencies
       run: flutter pub get
     - name: Run tests
-      run: flutter test test/trial_test.dart
-      
+      run: flutter test CIS350/stock_it_application/test/trial_test.dart
