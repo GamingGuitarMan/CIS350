@@ -1,7 +1,11 @@
 name: Integration Test
 
 on:
-  push:
+  label:
+    inputs:
+      branch:
+        description: 'Branch to run tests on'
+        required: true
     branches: [ master ]
 
 jobs:
