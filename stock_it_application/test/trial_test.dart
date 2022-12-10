@@ -6,7 +6,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:stock_it_application/app/home/Controller/homeController.dart';
 
 void main() {
-  group('saveUpdateItem test', () {
+  group('saveUpdateItemTEST', () {
     final formKey = GlobalKey<FormState>();
     final collectionReference = FirebaseFirestore.instance.collection('items');
 
@@ -23,7 +23,6 @@ void main() {
       expect(items.length, 1);
       expect(items[0].get('name'), name);
       expect(items[0].get('shelfLife'), shelfLife);
-      
     });
 
     test('updates existing item in collection', () async {
@@ -55,7 +54,7 @@ void main() {
 
 
 
-group('timeUpdate test', () {
+group('timeUpdateTEST', () {
     final collectionReference = FirebaseFirestore.instance.collection('items');
     final timeReference = FirebaseFirestore.instance.collection('time').doc('1');
 
@@ -96,6 +95,7 @@ test('updates shelf life of items when time has passed', () async {
       // Fetch the updated item from the collection
       final updatedSnapshot = await initialDocRef.get();
       final updatedItem = updatedSnapshot.data() ?? {};
+
       expect(updatedItem['shelfLife'], 3);
 
     });
@@ -124,7 +124,3 @@ test('updates shelf life of items when time has passed', () async {
     });
   });
 }
-
-
-
-
