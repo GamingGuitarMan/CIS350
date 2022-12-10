@@ -10,7 +10,7 @@ import '../timeModel.dart';
 /*
  * HomeController class is the main control class
  * used to handle the logic of items, the changing of their attributes,
- * and the scheduling of shopping appointments for the user
+ * and the scheduling of shopping appointments for the users
  */
 class HomeController extends GetxController {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
