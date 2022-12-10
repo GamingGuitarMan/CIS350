@@ -19,6 +19,8 @@ jobs:
       run: |
         git clone https://github.com/flutter/flutter.git -b stable
         export PATH="$PATH:`pwd`/flutter/bin"
+    - name: Changing Current directory
+      run: cd ./flutter
     - name: Install dependencies
       run: flutter pub get
     - name: Run tests
