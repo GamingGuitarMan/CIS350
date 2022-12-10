@@ -23,6 +23,7 @@ void main() {
       expect(items.length, 1);
       expect(items[0].get('name'), name);
       expect(items[0].get('shelfLife'), shelfLife);
+      
     });
 
     test('updates existing item in collection', () async {
