@@ -9,23 +9,20 @@
  
 
 ---
-# 1. Abstract  **** GRAMMAR CHECKED ****
+# 1. Abstract
 One issue all of us have as a team and many others face, is getting distracted as our lives get ever more complex and busy. When commuting, or in passing time, people generally worry about what to do next, and what is coming up. It is not uncommon for me to wake up, only to realize I had run out of cereal the day before, and have to go without breakfast. Prehaps after getting home from a long day, I realize that I needed to pick up milk in order to cook the meal that was planned. I either have to sacrifice the precious and limited time I have to get the required groceries, or sacrifice nutrition. That is where the idea of our mobile app "Stock it," comes into play. Our app will notify the user when they are on their way home that they are running low on their favorite grocery items, so that they do not forget to pick it up from the store. When you buy your item, simply scan the receipt, and the app will automatically add your items into your virtual pantry. Based on the size and user input, the app will then notify you when you are low, and the process will continue without ever having to interupt your daily life for forgetten items.
   
   
 --- 
-# 2. Introduction   **** UPDATED ****
-** In our app, it will load a blank screen with a menu where the user can select add item. The user is able to store their items and the shelf life in FireFlutter. The user can then edit/remove/add additional items. When it gets closer to the time a user has set, a prompt shows up on the screen which informs the user what they need to pick up for the day. **
-
-**FROM**
-In our app, it will start by asking the user to make an account and setup a profile. This profile will save and store the items in there account which is unique to them. Then the user can scan in an item's barcode to add it to their inventory, it will also ask for quantity and how often the eat and or drink the item. With all this information, it will notify them when they are low and whic local grocery stores have it in stock.
-  
-    
+# 2. Introduction 
+ In our app, it will load a blank screen with a menu where the user can select add item. The user is able to store their items and the shelf life in FireFlutter. The user can then edit/remove/add additional items. When it gets closer to the time a user has set, a prompt shows up on the screen which informs the user what they need to pick up for the day. 
+ 
 ---
-# 3. Design ** NEW ** 
-** The overall design for our app uses FlutterFire, which is used for Full Stack devlopment of the application. With this we we ensure ease of use for all aspects of the users **
+# 3. Design 
+The overall design for our app uses FlutterFire, which is used for Full Stack development of the application. With this we we ensure ease of use for all aspects of the users 
 
-The overall design for our app uses all free platforms for all aspects of our development stack. With this we can ensure the most risk-free development process possible. 
+![image](https://user-images.githubusercontent.com/50177364/206882573-29303dd3-d8c9-43c0-b32c-6bd09ee347be.png)
+
 
 
 ## 3.1 Stack Design  
