@@ -15,15 +15,15 @@ One issue all of us have as a team and many others face, is getting distracted a
   
 --- 
 # 2. Introduction 
- In our app, it will load a blank screen with a menu where the user can select add item. The user is able to store their items and the shelf life in FireFlutter. The user can then edit/remove/add additional items. When it gets closer to the time a user has set, a prompt shows up on the screen which informs the user what they need to pick up for the day. 
+ In our app, it will load a blank screen with a menu where the user can select add item. The user is able to store their items and the expected shelf life for that item. The user can then edit or remove that item, and add additional items. A user can also select a date and time in which they want to go grocery shopping, and when the time a user has set arrives, a notification is then sent to the phone so the user does not forget to shop, or any items they need when they shop. The shelf life of the items also lets the user know what they have currently, but will be out of by the time the next shopping trip comes around. Overall, the app is a great way for a user to keep track of and oragnize their shopping items to save time and effort on making lists and remembering they need to shop.
  
 ---
 # 3. Design 
-The API used in our application is Dart. Dart is used by FlutterFire, which is our mobile application platform. For testing our app, we are using a Flutter emulator. Our database and server is based in Firebase. For our documentation, we are using Markdown. Finally, Use Case Diagrams and Sequence Diagrams are created in Lucid Chart.
+The user-interface in our app is made from flutter which is coded in Dart. For testing our app, we are using an android emulator made from Android Studio, and then run from Visual Studio Code. Our database and server is Firestore in Firebase. For our documentation, we are using Markdown. Finally, Use Case Diagrams and Sequence Diagrams are created in Lucid Chart.
 
 ## 3.1 Stack Design  
 
-The stack of our app implements a serverless software architecture by using Firebase. This is an easy and hassle-free way to set up a server and database that handles the back end logic. This then connected to our front-end user interface, developed using Flutter. Flutter handles much of the logic we need for the user, and connects seemlessly with Firebase.
+The stack of our app implements a serverless software architecture by using Firebase. This is an easy and hassle-free way to set up a server and database that handles the back end logic. This then connected to our front-end user interface, developed using Flutter and coded in the language of Dart. Flutter handles much of the logic we need for the user, and connects seemlessly with Firebase so we don't have to worry about service maintainence or database management. 
                                      
    ![image](https://user-images.githubusercontent.com/50177364/206883157-1cf902d1-4f83-4ff4-9fa2-48d471b545b3.png)
 
