@@ -43,9 +43,9 @@ Front End<img width="593" alt="Screen Shot 2022-10-06 at 11 29 32 PM" src="https
 
 
 ## 3.4 Sequence Diagram  
-Login
+Add
 
-![Login Sequence](https://user-images.githubusercontent.com/50177364/193960858-e047f429-1a94-4f40-b10c-75538f09a9c9.PNG)
+![image](https://user-images.githubusercontent.com/50177364/206885544-8871c05d-c9da-43f5-88cf-94adab2fc86b.png)
 
 Edit
 
