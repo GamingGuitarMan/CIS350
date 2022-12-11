@@ -20,7 +20,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with: 
           channel: "stable"
+      - run: cd CIS350/stock_it_application/flutter # navigate to Flutter project directory
       - run: flutter pub get
       - run: flutter anaalyze
-      - name: Run tests
-        run: flutter test CIS350/stock_it_application/test/trial_test.dart
+      - run: flutter test
