@@ -20,7 +20,6 @@ jobs:
     - uses: subosito/flutter-action@v2
       with: 
         channel: "stable"
-    - name: Install dependencies
-      run: flutter pub get
-    - name: Run tests
-      run: flutter test CIS350/stock_it_application/test/trial_test.dart
+    - run: flutter pub get
+    - run: flutter anaalyze
+    - run: flutter test
