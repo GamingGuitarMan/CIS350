@@ -61,8 +61,8 @@ Set Restock Date
 <img width="205" alt="Screen Shot 2022-10-05 at 9 29 28 AM" src="https://user-images.githubusercontent.com/71032586/194072414-57250f36-cffc-45e7-8cc7-3a44f05ca825.png"> 
 Add Item Screen
 
-
-Risk analysis and Retrospective:
+--
+#5 Risk analysis and Retrospective:
 1. What were the risks, what were the problems, how did you deal with them during the
 project.
 
