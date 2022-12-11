@@ -19,11 +19,7 @@ One issue all of us have as a team and many others face, is getting distracted a
  
 ---
 # 3. Design 
-The overall design for our app uses FlutterFire, which is used for Full Stack development of the application. With this we we ensure ease of use for all aspects of the users 
-
-![image](https://user-images.githubusercontent.com/50177364/206882573-29303dd3-d8c9-43c0-b32c-6bd09ee347be.png)
-
-
+The API used in our application is Dart. Dart is used by FlutterFire, which is our mobile application platform. For testing our app, we are using a Flutter emulator. Our database and server is based in Firebase. For our documentation, we are using Markdown. Finally, Use Case Diagrams and Sequence Diagrams are created in Lucid Chart.
 
 ## 3.1 Stack Design  
 
