@@ -21,6 +21,8 @@ jobs:
         export PATH="$PATH:  ./flutter/bin"
     - name: Changing Current directory
       run: cd ./flutter
+    - name: Grant execute permission on Flutter binary
+      run: chmod +x flutter/bin/flutter
     - name: Install dependencies
       run: flutter pub get
     - name: Run tests
