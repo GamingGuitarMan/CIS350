@@ -36,11 +36,6 @@ UML
 
 ![image](https://user-images.githubusercontent.com/50177364/206883888-3c3db1c3-1398-439b-9380-1e65f1f04a53.png)
 
-
-
-![UseCaseDiagram-1](https://user-images.githubusercontent.com/77644964/194074271-d9d35b2e-fe64-4594-bee2-02b41624d304.png)
-
-
 ## 3.4 Sequence Diagram  
 Add
 
