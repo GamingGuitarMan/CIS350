@@ -76,6 +76,8 @@ One risk we considered was the database updates for added or deleted items. Init
 
 Finally, testing our app with flutter and Github proved to be a challenge, as the two tools did not always work well together. Despite these obstacles, we were able to overcome them and deliver a functional app."
 
+
+
 2. What was done and what could have been done better.
 
   One potential improvement for the test would be to also include a test for the case where the "saveUpdateItem" function is used to update an existing item in the collection. This could be done by adding an initial item to the collection, calling the "saveUpdateItem" function with the updated values, and then verifying that the item in the collection was indeed updated with the new values.
