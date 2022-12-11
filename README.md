@@ -85,6 +85,11 @@ project.
 
 Some problem we dealt with was getting our platforms to communicate effectively together. For our group, this consisted of using flutter to communicate with the android emulator. This was resolved by accessing our terminal and correcting the path required for flutter to access the correct Andriod SDK. 
 Another issue we came across was a back-and-forth without a display screen. We would get it to successfully work correctly but fail to add on top of that. Having a good functioning base to go back to was very helpful and made it easier to find and fix the errors.
-The risk for projects was having our database updated accordingly. If the user added or deleted an 'item' it should be updated as so. At first, we approached the project to just have 'add item' but we realized it would not make sense to only have an add so we incorporated a remove/delete button too. This was risky because it added another infrastructure for just deleting. 
+The risk for projects was having our database updated accordingly. If the user added or deleted an 'item' it should be updated as so. At first, we approached the project to just have 'add item' but we realized it would not make sense to only have an add so we incorporated a remove/delete button too. This was risky because it added another infrastructure for just deleting. We also ran into a wall when it came to testing for out app. Flutter and Github give us a hard time getting them to communcate with each other.
 
 2. What was done and what could have been done better.
+One potential improvement for the test would be to also include a test for the case where the "saveUpdateItem" function is used to update an existing item in the collection. This could be done by adding an initial item to the collection, calling the "saveUpdateItem" function with the updated values, and then verifying that the item in the collection was indeed updated with the new values.
+
+Additionally, it would be a good idea to include a "setUp" function to clear the "items" collection before each test is run, to ensure that the tests are independent and do not interfere with each other. This could be done by calling the clear() method on the "collectionReference" object before each test.
+
+
