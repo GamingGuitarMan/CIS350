@@ -64,6 +64,7 @@ Add Item Screen
 
 --
 # 5. Risk analysis and Retrospective:
+
 1. What were the risks, what were the problems, how did you deal with them during the
 project.
 
@@ -74,6 +75,8 @@ Another challenge we faced was the lack of a display screen, which made it diffi
 One risk we considered was the database updates for added or deleted items. Initially, we only planned to include an "add item" feature, but realized that it would not be useful without a corresponding "remove/delete" button. This added complexity to our app, but we believed it was necessary for a complete user experience.
 
 Finally, testing our app with flutter and Github proved to be a challenge, as the two tools did not always work well together. Despite these obstacles, we were able to overcome them and deliver a functional app."
+
+
 
 2. What was done and what could have been done better.
 
