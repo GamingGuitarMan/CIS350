@@ -47,7 +47,9 @@ Add
 
 ![image](https://user-images.githubusercontent.com/50177364/206885544-8871c05d-c9da-43f5-88cf-94adab2fc86b.png)
 
-Edit
+Update
+
+![image](https://user-images.githubusercontent.com/50177364/206885630-3e507502-284f-44bc-9f86-f6a3aaf1ebd1.png)
 
 ![Sequence Edit](https://user-images.githubusercontent.com/50177364/193960825-3b29974e-14f5-4eb6-aa0a-e37338f6fed1.PNG)
 
