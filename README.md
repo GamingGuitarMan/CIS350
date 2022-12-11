@@ -23,7 +23,8 @@ The API used in our application is Dart. Dart is used by FlutterFire, which is o
 
 ## 3.1 Stack Design  
 
-The stack of our app implements a serverless software architecture by using Firebase. This is an easy and hassle-free way to set up a server and database that handles the back end logic. This then connected to our front-end user interface, developed using Flutter. Flutter handles much of the logic we need for the user, and connects seemlessly with Firebase. 
+The stack of our app implements a serverless software architecture by using Firebase. This is an easy and hassle-free way to set up a server and database that handles the back end logic. This then connected to our front-end user interface, developed using Flutter. Flutter handles much of the logic we need for the user, and connects seemlessly with Firebase. ![image](https://user-images.githubusercontent.com/50177364/206883157-1cf902d1-4f83-4ff4-9fa2-48d471b545b3.png)
+
 
 ## 3.2 Class Diagram  
 Front End<img width="593" alt="Screen Shot 2022-10-06 at 11 29 32 PM" src="https://user-images.githubusercontent.com/71032586/194461947-c7c371a0-e602-41bb-8d4f-035171b9d962.png">
