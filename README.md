@@ -79,16 +79,20 @@ Add Item Screen
 
 
 Risk analysis and Retrospective:
-A chapter in the documentation that talks about:
 1. What were the risks, what were the problems, how did you deal with them during the
 project.
 
-Some problem we dealt with was getting our platforms to communicate effectively together. For our group, this consisted of using flutter to communicate with the android emulator. This was resolved by accessing our terminal and correcting the path required for flutter to access the correct Andriod SDK. 
-Another issue we came across was a back-and-forth without a display screen. We would get it to successfully work correctly but fail to add on top of that. Having a good functioning base to go back to was very helpful and made it easier to find and fix the errors.
-The risk for projects was having our database updated accordingly. If the user added or deleted an 'item' it should be updated as so. At first, we approached the project to just have 'add item' but we realized it would not make sense to only have an add so we incorporated a remove/delete button too. This was risky because it added another infrastructure for just deleting. We also ran into a wall when it came to testing for out app. Flutter and Github give us a hard time getting them to communcate with each other.
+ We encountered several challenges while developing our app, including difficulties with communication between our platforms and with the android emulator. We were able to resolve these issues by checking our terminal and making sure the path for flutter was pointing to the correct Android SDK.
+
+Another challenge we faced was the lack of a display screen, which made it difficult to build on our progress and fix errors. To overcome this, we focused on creating a solid foundation and then adding new features and functionality.
+
+One risk we considered was the database updates for added or deleted items. Initially, we only planned to include an "add item" feature, but realized that it would not be useful without a corresponding "remove/delete" button. This added complexity to our app, but we believed it was necessary for a complete user experience.
+
+Finally, testing our app with flutter and Github proved to be a challenge, as the two tools did not always work well together. Despite these obstacles, we were able to overcome them and deliver a functional app."
 
 2. What was done and what could have been done better.
-One potential improvement for the test would be to also include a test for the case where the "saveUpdateItem" function is used to update an existing item in the collection. This could be done by adding an initial item to the collection, calling the "saveUpdateItem" function with the updated values, and then verifying that the item in the collection was indeed updated with the new values.
+
+  One potential improvement for the test would be to also include a test for the case where the "saveUpdateItem" function is used to update an existing item in the collection. This could be done by adding an initial item to the collection, calling the "saveUpdateItem" function with the updated values, and then verifying that the item in the collection was indeed updated with the new values.
 
 Additionally, it would be a good idea to include a "setUp" function to clear the "items" collection before each test is run, to ensure that the tests are independent and do not interfere with each other. This could be done by calling the clear() method on the "collectionReference" object before each test.
 
