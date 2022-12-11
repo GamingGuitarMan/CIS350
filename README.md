@@ -28,10 +28,9 @@ The stack of our app implements a serverless software architecture by using Fire
    ![image](https://user-images.githubusercontent.com/50177364/206883157-1cf902d1-4f83-4ff4-9fa2-48d471b545b3.png)
 
 ## 3.2 Class Diagram  
-Front End<img width="593" alt="Screen Shot 2022-10-06 at 11 29 32 PM" src="https://user-images.githubusercontent.com/71032586/194461947-c7c371a0-e602-41bb-8d4f-035171b9d962.png">
+Front End
 
-
-![BackEnd UML](https://user-images.githubusercontent.com/50177364/193965701-6af769eb-9310-4c40-ac8c-1791e0752937.PNG)
+![image](https://user-images.githubusercontent.com/50177364/206908209-5f3691f3-ab1c-42f1-801f-1038ca14fbe5.png)
 
 ## 3.3 Use Case Diagram  
 
@@ -51,23 +50,13 @@ Update
 
 ![image](https://user-images.githubusercontent.com/50177364/206885630-3e507502-284f-44bc-9f86-f6a3aaf1ebd1.png)
 
-![Sequence Edit](https://user-images.githubusercontent.com/50177364/193960825-3b29974e-14f5-4eb6-aa0a-e37338f6fed1.PNG)
-
 Remove
 
 ![image](https://user-images.githubusercontent.com/50177364/206885707-64cc61ee-d336-4b10-a721-277e4bd9cc51.png)
 
-
-![CIS350-Project-SequenceDiagram-RemoveUseCase-1](https://user-images.githubusercontent.com/77644964/194074245-846d8e59-5858-43ad-a1f0-ea8bc475b3e9.png)
-
 Set Restock Date
 
 ![image](https://user-images.githubusercontent.com/50177364/206885860-199bbd9e-fe8a-4d80-918c-e04057f2cc30.png)
-
-
-![CIS350-Project-SequenceDiagram-ScanUseCase-1](https://user-images.githubusercontent.com/77644964/194074259-c3f65c07-8186-45bc-8f92-4a46101a88bc.png)
-
-
 
 # 4. User Interface  
   <img width="208" alt="Screen Shot 2022-10-04 at 9 25 56 PM" src="https://user-images.githubusercontent.com/71032586/193959633-1687c495-bf04-4959-bf56-7c91fdcc0ba7.png"> 
