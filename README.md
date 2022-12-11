@@ -53,10 +53,6 @@ Update
 
 ![Sequence Edit](https://user-images.githubusercontent.com/50177364/193960825-3b29974e-14f5-4eb6-aa0a-e37338f6fed1.PNG)
 
-Manually Add
-
-![CIS350-Project-SequenceDiagram-ManuallyAddUseCase-1](https://user-images.githubusercontent.com/77644964/194074221-446a8504-bd93-4316-bb1b-5491e309c3c3.png)
-
 Remove
 
 ![image](https://user-images.githubusercontent.com/50177364/206885707-64cc61ee-d336-4b10-a721-277e4bd9cc51.png)
@@ -64,7 +60,10 @@ Remove
 
 ![CIS350-Project-SequenceDiagram-RemoveUseCase-1](https://user-images.githubusercontent.com/77644964/194074245-846d8e59-5858-43ad-a1f0-ea8bc475b3e9.png)
 
-Scan Use
+Set Restock Date
+
+![image](https://user-images.githubusercontent.com/50177364/206885860-199bbd9e-fe8a-4d80-918c-e04057f2cc30.png)
+
 
 ![CIS350-Project-SequenceDiagram-ScanUseCase-1](https://user-images.githubusercontent.com/77644964/194074259-c3f65c07-8186-45bc-8f92-4a46101a88bc.png)
 
