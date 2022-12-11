@@ -28,7 +28,7 @@ The stack of our app implements a serverless software architecture by using Fire
    ![image](https://user-images.githubusercontent.com/50177364/206883157-1cf902d1-4f83-4ff4-9fa2-48d471b545b3.png)
 
 ## 3.2 Class Diagram  
-Front End
+UML
 
 ![image](https://user-images.githubusercontent.com/50177364/206908209-5f3691f3-ab1c-42f1-801f-1038ca14fbe5.png)
 
