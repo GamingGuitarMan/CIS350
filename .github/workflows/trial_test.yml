@@ -22,4 +22,5 @@ jobs:
           channel: "stable"
       - run: flutter pub get
       - run: flutter anaalyze
-      - run: flutter test
+      - name: Run tests
+        run: flutter test CIS350/stock_it_application/test/trial_test.dart
