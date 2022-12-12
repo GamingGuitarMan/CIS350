@@ -54,12 +54,14 @@ Set Restock Date
 ![image](https://user-images.githubusercontent.com/50177364/206885860-199bbd9e-fe8a-4d80-918c-e04057f2cc30.png)
 
 # 4. User Interface  
-  <img width="208" alt="Screen Shot 2022-10-04 at 9 25 56 PM" src="https://user-images.githubusercontent.com/71032586/193959633-1687c495-bf04-4959-bf56-7c91fdcc0ba7.png"> 
-  Login Screen
-  <img width="208" alt="Screen Shot 2022-10-05 at 9 28 52 AM" src="https://user-images.githubusercontent.com/71032586/194072316-d7d4eb34-995a-4426-996b-a469fa123c17.png"> 
-  Inventory Screen
-<img width="205" alt="Screen Shot 2022-10-05 at 9 29 28 AM" src="https://user-images.githubusercontent.com/71032586/194072414-57250f36-cffc-45e7-8cc7-3a44f05ca825.png"> 
-Add Item Screen
+  
+  <img width="272" alt="Screen Shot 2022-12-11 at 10 13 50 PM" src="https://user-images.githubusercontent.com/71032586/206953108-d3aafce9-8226-4c96-a640-d205dacdf9e8.png">
+<img width="267" alt="Screen Shot 2022-12-11 at 10 13 56 PM" src="https://user-images.githubusercontent.com/71032586/206953110-1d1cde82-3b89-4513-a6a7-21057bd86493.png">
+<img width="264" alt="Screen Shot 2022-12-11 at 10 14 05 PM" src="https://user-images.githubusercontent.com/71032586/206953111-ed3bf3b7-88d6-45ed-bf0b-0edf0e995441.png">
+<img width="266" alt="Screen Shot 2022-12-11 at 10 14 12 PM" src="https://user-images.githubusercontent.com/71032586/206953114-9ae73f6a-b3ac-43d3-89ff-c6b43d457370.png">
+<img width="258" alt="Screen Shot 2022-12-11 at 10 14 18 PM" src="https://user-images.githubusercontent.com/71032586/206953116-7370b752-b587-4364-93a7-636f672aeb09.png">
+<img width="265" alt="Screen Shot 2022-12-11 at 10 14 24 PM" src="https://user-images.githubusercontent.com/71032586/206953117-a817d5c4-20dc-4a11-8f5a-2103c8e52bdf.png">
+
 
 
 --
