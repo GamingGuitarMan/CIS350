@@ -87,3 +87,4 @@ Finally, testing our app with flutter and Github proved to be a challenge, as th
 Additionally, it would be a good idea to include a "setUp" function to clear the "items" collection before each test is run, to ensure that the tests are independent and do not interfere with each other. This could be done by calling the clear() method on the "collectionReference" object before each test.
 
 
+A
